@@ -165,8 +165,7 @@ public class ExpressionTree<AnyType extends Comparable<? super AnyType>> {
         }
         return d;
     }
-
-    //Referenced Weiss Code for this inner class
+    
     private static class ExpressionNode{
         ExpressionNode(String theEle){
             this(theEle, null, null);
