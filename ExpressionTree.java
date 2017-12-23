@@ -103,19 +103,6 @@ public class ExpressionTree<AnyType extends Comparable<? super AnyType>> {
     private ExpressionNode buildExpress(String p){
         //split string based on white space into operators and operands
         String[] postfix = p.split("\\s");
-
-        //if there's only 1 string with no spaces then it's not a postfix
-        //expression
-        //shiit today is 11/15/17 got homework back 11/14/17 a string say 4 by
-        //itself IS a postfix expression so it should be able to handle that
-        //case
-        //optimized the code below to be able to handle that
-        //sooo if you have a really long string with no spaces, then
-        //postfix will only have 1 element and the length of that element
-        //will be greater than 1 so then throw an exception in that case
-        //kind of brute forcy solution but just use a for loop
-        //to run through the string to make sure each character is an integer
-        //use a count variable
         int c = 0;
         boolean valid = true;
         while(valid && c < postfix[0].length()){
