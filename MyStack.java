@@ -1,6 +1,4 @@
-/**Ed Ellis
- * ele2117
- * MyStack.java
+/** MyStack.java
  * to implement a stack
  */
 import java.util.LinkedList;
